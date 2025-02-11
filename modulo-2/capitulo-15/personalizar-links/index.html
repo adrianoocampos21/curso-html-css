@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personaizando links</title>
+    <style>
+        a {
+            color: yellowgreen;
+        }
+
+        a:hover {
+            background-color: black;
+        }
+
+        a::before {
+            content: '[clic] ';
+        }
+
+        ol > li >a:hover {
+            background-color: aquamarine;
+        }
+
+        .especial:hover {
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Este é um exemplo de Personalização</h1>
+    <ol>
+        <li><a href="https://youtube.com"> Aqui está o Youtube</a></li>
+        <p class="erro"></p>
+        <li><a href="https://github.com" class="especial">Aqui está o Github</a></li>
+    </ol>
+    <ul>
+        <li><a href="https://adrianoocampos21.github.io">Github do Adriano</a></li>
+        <p class="erro"></p>
+    </ul>
+
+</body>
+</html>

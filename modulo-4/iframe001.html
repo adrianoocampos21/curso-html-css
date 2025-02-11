@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>usando iframe</title>
+
+    <style>
+        body{
+            margin: 0;
+            text-align: center;
+        }
+
+        p {
+            margin: auto;
+            width: 600px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+
+        iframe {
+            width: 400px;
+            height: 300px;
+        }
+
+        p.desc {
+            margin-top: 10px;
+            margin-bottom: 60px;
+            background-color: aquamarine;
+            color: black;
+            font: normal bold 1.5em/2em arial, sans-serif ;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Meu primeiro iframe</h1>
+    <p>
+        aqui está o site<iframe src="https://www.cursoemvideo.com" frameborder="0" scrolling="yes"></iframe> do curso em video
+    </p>
+
+    <p class="desc">
+        Este foi um exemplo de iframe, o iframe é uma quadra em linha, "inline" "frame", ENTENDEU? 
+    </p>
+
+    <p>
+        aqui o site do google
+
+        <iframe src="https://www.google.com.br" frameborder="0"></iframe>
+
+        pena que nao funciona.
+    </p>
+
+    <p class="desc">
+
+        existem alguns casos onde o site não permite o uso no iframe por questão de segurança
+    
+    </p>
+
+    <p>
+        Por exemplo
+
+        <iframe src="https://adrianoocampos21.github.io/mascote-android/" frameborder="0" scrolling="no">
+
+           <!--Caso o dispositivo não seja compatível com iframe, ele vai mostrar o link abaixo.-->
+
+            <a href="https://adrianoocampos21.github.io/mascote-android/" target="_blank" rel="noopener noreferrer"></a>
+
+        </iframe>
+
+        perceba que nesse modelo, não conseguimos usar o 'scroll', porque está desativado dentro do html.
+
+    </p>
+
+    <p class="desc">
+        Por último, inserimos um link[a] com o mesmo endereço do iframe, dessa forma, se o dispositivo não for compativel, vai mostrar o apenas o link
+    </p>
+
+
+    <!--Tamanho padrão do iframe 300x150, podemos inserir os argumentos [src="" frameborder="" height="" scrolling=""]-->
+
+</body>
+</html>

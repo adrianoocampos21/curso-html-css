@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agrupamento de tag</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: auto;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+            background-color: rgb(202, 207, 210);
+        }
+
+        header {
+            display: flex;
+            width: 800px;
+            background-color: #797d81;
+            margin: 10px auto;
+            box-shadow: 5px 4px 7px 1px rgba(0, 0, 0, 0.479);
+        }
+
+        nav {
+            margin: 30px 80px;
+        }
+
+        nav a {
+            font: normal bold larger 'georgia', 'arial', 'sans';
+            text-decoration: none;
+            padding-right: 10px;
+            color: #ffffff;
+        }
+
+        nav a:hover {
+            color: #d3d3d3;
+            text-shadow: 1px 1px 10px #a6ff92;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            font: normal bold 32px 'georgia', 'arial', 'sans';
+            margin: 20px 10px 10px 50px;
+            background-color: #797d81;
+            width: 300px;
+            height: 40px;
+        }
+
+        main {
+            box-shadow: 5px 4px 7px 1px rgba(0, 0, 0, 0.479);
+            background-color: #797d81;
+            width: 800px;
+            height: 800px;
+            margin: 0 auto;
+        }
+
+        #noticias {
+            padding: 10px 20px;
+        }
+
+        h2 {
+            color: #5aaeae;
+            text-shadow: 1px 1px 1px #000000;
+            text-decoration: underline #9c9c9c;
+            text-align: center;
+            margin: 10px auto;
+        }
+
+        #noticias p {
+            text-indent: 20px;
+            padding: 10px 0px;
+        }
+
+        #midia article h2 {
+            padding-top: 20px;
+        }
+
+        div {
+            margin: 0 auto;
+            margin-top: 50px;
+            background-color: #ffffff;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        footer {
+            text-align: center;
+            width: 800px;
+            height: 40px;
+            margin: 40px auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>nome do site</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Opções</a>
+            <a href="#">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="noticias">
+            <article>
+                <h2>Esportes mais praticados no ano</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, molestiae quae voluptate ab porro eaque nemo quisquam tenetur mollitia delectus ullam cupiditate ratione expedita, deserunt facilis? Iusto minus officia cumque.</p>
+                <aside>
+                    <p>por: Adriano Ocampos</p>
+                </aside>
+            </article>
+        </section>
+
+        <section id="midia">
+            <article>
+                <h2>Imagens mostram momento exato em que...</h2>
+                <picture>
+                   <div></div>
+                   <div></div>
+                   <div></div>
+                </picture>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <h3>nome do site</h3>
+        <p>produzido e entregue por gazetaplan</p>
+    </footer>
+</body>
+</html>

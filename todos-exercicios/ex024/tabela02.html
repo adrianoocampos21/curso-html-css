@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Zebrado/ Mesclagem</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, black, white, black);
+        }
+
+        caption {
+            background-color: white;
+            text-align: center;
+            color: red;
+            font-weight: 400;
+            padding: 7px;
+            border: 1px solid black;
+        }
+
+        table {
+            box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.541);
+            background-color: white;
+            position: relative;
+            margin: auto;
+            min-width: 800px;
+            min-height: 1500px;
+            border-collapse: collapse;
+            font-size: 2em;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center; /*alinhamento horizontal*/
+            vertical-align: middle; /*alinhamento vertical*/
+        }
+
+        thead, tfoot {
+            border: 1px solid black;
+        }
+
+        thead tr th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: rgba(127, 255, 212, 0.413);
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!--
+    Anatomina para tabelas grandes
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TROOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>
+            População por Estado
+        </caption>
+
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td>17.264.943</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bahia</td>
+                <td>14.873.064</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Paraná</td>
+                <td>11.433.957</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Rio Grande do Sul</td>
+                <td>11.377.239</td>
+            </tr>
+                <td>7</td>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Rio de Janeiro</td>
+                <td>17.264.943</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Bahia</td>
+                <td>14.873.064</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Paraná</td>
+                <td>11.433.957</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Rio Grande do Sul</td>
+                <td>11.377.239</td>
+            </tr>
+                <td>13</td>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Minas Gerais</td>
+                <td>21.168.791</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Rio de Janeiro</td>
+                <td>17.264.943</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Bahia</td>
+                <td>14.873.064</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Paraná</td>
+                <td>11.433.957</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Rio Grande do Sul</td>
+                <td>11.377.239</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th colspan="2">Total</th>
+            <th>217.000.000</th>
+        </tfoot>
+    </table>
+
+</body>
+</html>

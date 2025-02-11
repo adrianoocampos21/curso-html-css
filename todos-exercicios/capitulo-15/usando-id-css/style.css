@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    background-color: skyblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: aliceblue;
+}
+
+h2 {
+    color: blue;
+}
+
+p {
+    color: black
+}
+
+#principal {
+    text-align: center;
+}
+
+.basico {
+    color: brown;
+}
+
+.avancado {
+    color: blueviolet;
+}

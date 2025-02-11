@@ -1,0 +1,17 @@
+body {
+    font: normal 16px arial, Verdana, serif; /*shorthand*/
+    text-align: left; /*texto alinhado a esquerda*/
+}
+
+h1 {
+    text-align: center; /*texto no centro*/
+}
+
+h2 {
+    text-align: right; /*texto na direita*/
+}
+
+p {
+    text-align: justify; /*texto justificado, tanto na direita quanto na esquerda */
+    text-indent: 20px; /*inicio do texto com espaçamento*/
+}
